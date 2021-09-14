@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <form action="test_php.php" method="POST" role="form">
+            <legend>Get files</legend>
+
+            <div class="form-group">
+                <label for="">Tên</label>
+                <input type="text" class="form-control" id="" placeholder="Nhập vào tên" name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="">Tuổi</label>
+                <input type="number" class="form-control" id="" placeholder="Nhập vào tuổi" name="age">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div> -->
+
+    <button id="sub" class="btn btn-number less"><i class="fa fa-minus" aria-hidden="true"></i></button>
+    <input type="text" value="1" id="quantity" name="quantity" onchange="quantityChange(this)" />
+    <button id="add" class="btn btn-number more"><i class="fa fa-plus " aria-hidden="true"></i></button>
+</body>
+
+</html>
+<script>
+    var count = 1;
+    var countEl = document.getElementById("quantity");
+    $('#add').click(function() {
+        count++;
+        countEl.value = count;
+    })
+
+    $('#sub').click(function() {
+            if (count > 1) {
+                count--;
+                countEl.value = count;
+            }
+
+        })
+        // function plus(){
+        //     count++;
+        //     countEl.value = count;
+        // }
+        // function minus(){
+        //   if (count > 1) {
+        //     count--;
+        //     countEl.value = count;
+        //   }  
+        // }
+</script>

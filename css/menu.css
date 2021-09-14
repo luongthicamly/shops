@@ -1,0 +1,7 @@
+li.nav-item {
+    padding: 0px 5px 0px 5px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000 !important;
+}

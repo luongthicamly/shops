@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        #hello,
+        #bye {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="demo">10 + 10 = <input type="text" name="ketqua" id="kq1"></p>
+    <button id="bt1">check</button>
+    <p id="hello">ban da dung</p>
+</body>
+<script src="./js/jquery-2.2.4.min.js"></script>
+<script language="JavaScript">
+    $('#bt1').click(function() {
+        var kq1 = $('#kq1').val();
+        if (kq1 == 20) {
+            var next = confirm('bạn có muốn trả lời câu tiếp theo');
+            if (next == true) {
+                var ketqua = prompt('');
+
+                // $('#demo').html("10*10 =");
+                if (ketqua == 100) {
+                    $('#hello').css('display', 'block');
+                } else {
+                    alert('10*10 sai');
+                }
+            }
+        } else {
+            alert('ban tra loi sai');
+        }
+    });
+</script>
+
+</html>

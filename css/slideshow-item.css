@@ -1,0 +1,69 @@
+.MultiCarousel {
+    float: left;
+    overflow: hidden;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+}
+
+.MultiCarousel {
+    min-height: 189px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.MultiCarousel .MultiCarousel-inner {
+    transition: 1s ease all;
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item>div {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background: #f1f1f1;
+    color: #666;
+}
+
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+    position: absolute;
+    border-radius: 50%;
+    top: calc(50% - 20px);
+}
+
+.MultiCarousel .leftLst {
+    left: 0;
+}
+
+.MultiCarousel .rightLst {
+    right: 0;
+}
+
+.MultiCarousel .leftLst.over,
+.MultiCarousel .rightLst.over {
+    pointer-events: none;
+    background: #ccc;
+    border: none;
+    padding: 4px 12px;
+}
+
+img.img-item {
+    width: 100%;
+    height: auto;
+}
+
+.btn-color {
+    background: #bb087673;
+    padding: 4px 12px;
+}
+
+.btn-color i.fa {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}

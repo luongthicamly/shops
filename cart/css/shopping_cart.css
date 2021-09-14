@@ -1,0 +1,132 @@
+body {
+    background: #f4f4f4;
+}
+
+main {
+    margin-top: 5%;
+}
+
+.cart {
+    background: #fff;
+}
+
+.item-cart {
+    margin-bottom: 5%;
+    padding: 10px;
+}
+
+.title {
+    border-bottom: 1px solid #f4f4f4;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.item-cart img {
+    width: 130px;
+    height: auto;
+}
+
+.title .custom-control-label::before {
+    position: absolute;
+    top: 0.9rem;
+    left: 0;
+    display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+    pointer-events: none;
+    content: "";
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #dee2e6;
+}
+
+.title .custom-control-label::after {
+    position: absolute;
+    top: 0.9rem;
+    left: 0;
+    display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.title .custom-control-label {
+    padding-left: 20px;
+}
+
+.quantity {
+    border: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 1px;
+}
+
+.btn-number {
+    padding: 3px 8px;
+}
+
+.center {
+    text-align: center;
+}
+
+.fa-trash-o {
+    font-size: 21px;
+}
+
+
+/******BILL*****/
+
+.payment {
+    padding: 10px;
+}
+
+.title-payment {
+    background: #bb0876;
+    color: #fff;
+    padding: 10px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.payment p i {
+    padding-right: 10px;
+}
+
+.title-order {
+    color: #bb0876;
+    font-size: 20px;
+}
+
+.total {
+    border-top: 1px solid #f4f4f4;
+}
+
+.payment p .money {
+    float: right;
+    font-size: 20px;
+}
+
+.total .money {
+    color: red;
+}
+
+.btn-order {
+    width: 100%;
+    background: #bb0876;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.vat {
+    color: gray;
+    float: right;
+    margin-bottom: 10px;
+}

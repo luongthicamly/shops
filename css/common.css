@@ -1,0 +1,210 @@
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    border-color: #dc3545;
+    padding-right: calc(1.5em + .75rem);
+    background-image: url(../../../images/not.svg);
+    background-repeat: no-repeat;
+    background-position: center right calc(.375em + .1875rem);
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid {
+    border-color: #28a745;
+    padding-right: calc(1.5em + .75rem);
+    background-image: url(../../../images/yes.svg);
+    background-repeat: no-repeat;
+    background-position: center right calc(.375em + .1875rem);
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+@media (min-width: 1200px) {}
+
+@media screen and (min-width: 992px) {
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background: #fff;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    /* header {
+        background-image: url(../images/bg-1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 70px;
+        width: 100%;
+        margin-top: -10px;
+    } */
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .register {
+        background: none;
+        border: none;
+    }
+    .header {
+        display: none;
+    }
+    .contact span {
+        -webkit-text-stroke-width: 1px !important;
+        font-size: 15px !important;
+    }
+    .contact h3 {
+        font-size: 15px !important;
+    }
+    .contact p {
+        margin-bottom: 5px !important;
+    }
+    .top-spint .col-sm-3 {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+    .register {
+        background: none;
+        border: none;
+    }
+    .header {
+        display: none;
+    }
+    .top-spint .col-sm-3 {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 576px) {
+    .register {
+        background: none;
+        border: none;
+    }
+    .header {
+        display: none;
+    }
+    .top-spint .col-sm-3 {
+        margin-top: 5%;
+    }
+    .popup {
+        margin: 10px auto !important;
+    }
+    label.name {
+        padding-right: 0px !important;
+    }
+}
+
+
+/***** HEDER***/
+
+.header {
+    width: 100%;
+    height: auto;
+    background: #f0d0e4;
+}
+
+.header .p-2 {
+    color: #bb0876;
+}
+
+.red.lighten-3 {
+    background-color: #ef9a9a!important;
+    border: 1px solid #bb0876;
+}
+
+.red.lighten-3 i {
+    color: #fff;
+}
+
+.carousel-inner {
+    /* height: 700px; */
+}
+
+.sticky+.main {
+    padding-top: 50px;
+}
+
+.mg-top {
+    margin-top: 5%;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.hot-product h2 {
+    margin-bottom: 0;
+    border-top: 2px solid #bb0876;
+    border-bottom: 0;
+    position: relative;
+    -js-display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.title-hot {
+    padding: 10px 15px;
+    color: #fff !important;
+}
+
+.title-hot {
+    border-bottom: 1px solid #bb0876;
+    background: #bb0876;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.title-hot::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.title-hot::after {
+    border: 19px solid #bb0876;
+    position: absolute;
+    display: inline-block;
+    margin-left: 15px;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    margin-top: -11px;
+    left: auto;
+}
+
+.hot-product .col-sm-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+footer {
+    background: #d35fa6;
+    color: #fff;
+    width: 100%;
+    background-position: center;
+    padding: 5%
+}
+
+footer p {
+    font-size: 18px;
+}
+
+footer h4 {
+    font-weight: 700;
+    border-bottom: 2px solid #fff;
+    padding: 5px;
+}

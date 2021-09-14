@@ -1,0 +1,12 @@
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: #bb0876 !important;
+    background-color: #bb0876 !important;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0px !important;
+}
+
+.custom-control-label::before {
+    border: #bb0876 solid 2px !important;
+}
